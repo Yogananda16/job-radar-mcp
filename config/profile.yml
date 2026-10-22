@@ -15,22 +15,22 @@ candidate:
 roles:
   - label: "AI/GenAI Eng"
     tier: primary
-    keywords: ["ai engineer", "ai developer", "genai", "generative ai", "llm", "agentic", "applied ai"]
+    keywords: ["ai engineer", "ai developer", "ai/ml", "genai", "gen ai", "generative ai", "llm", "agentic", "applied ai", "ai software engineer", "prompt engineer"]
   - label: "ML Eng"
     tier: primary
-    keywords: ["machine learning", "ml engineer", "mlops", "nlp engineer", "deep learning"]
+    keywords: ["machine learning", "ml engineer", "mlops", "ml ops", "nlp engineer", "deep learning", "computer vision engineer", "ml scientist"]
   - label: "Data Scientist"
     tier: primary
-    keywords: ["/data scien\\w*/", "/applied scien\\w*/", "research scientist"]
+    keywords: ["/data scien\\w*/", "/applied scien\\w*/", "/decision scien\\w*/", "research scientist"]
   - label: "Data Eng"
     tier: secondary
-    keywords: ["/data engineer\\w*/", "analytics engineer", "etl"]
+    keywords: ["/data engineer\\w*/", "analytics engineer", "etl", "data platform engineer", "data pipeline"]
   - label: "Data/BI Analyst"
     tier: secondary
-    keywords: ["data analyst", "bi analyst", "business intelligence", "product analyst"]
+    keywords: ["data analyst", "bi analyst", "business intelligence", "product analyst", "bi developer", "bi engineer", "power bi", "reporting analyst", "data analytics"]
   - label: "Business Analyst"
     tier: adjacent
-    keywords: ["business analyst", "systems analyst"]
+    keywords: ["business analyst", "systems analyst", "business systems analyst"]
 
 # ── Skills ──────────────────────────────────────────────────────────────────
 # Matched against each job description (30% of the fit score). If you leave
