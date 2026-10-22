@@ -15,7 +15,7 @@ candidate:
 roles:
   - label: "AI/GenAI Eng"
     tier: primary
-    keywords: ["ai engineer", "genai", "generative ai", "llm", "agentic", "applied ai"]
+    keywords: ["ai engineer", "ai developer", "genai", "generative ai", "llm", "agentic", "applied ai"]
   - label: "ML Eng"
     tier: primary
     keywords: ["machine learning", "ml engineer", "mlops", "nlp engineer", "deep learning"]
