@@ -1,0 +1,258 @@
+# portals.yml — which company boards to scan, and which titles/locations to keep.
+#
+# Copy to config/portals.yml and edit. Read by the "tracked" source on every scan.
+# Supported boards (no API key needed): Greenhouse, Lever, Ashby, Workday,
+# SmartRecruiters, iCIMS, Oracle Recruiting Cloud, amazon.jobs.
+# See docs/CONFIGURATION.md for every option.
+
+# A title must contain one positive keyword and no negative keyword.
+# "word:X" = whole word only; "A + B" = both must appear.
+title_filter:
+  positive:
+    - AI Engineer
+    - AI/ML Engineer
+    - AI ML Engineer
+    - Applied AI Engineer
+    - Generative AI Engineer
+    - GenAI Engineer
+    - LLM Engineer
+    - Agentic AI Engineer
+    - AI Researcher
+    - AI + Engineer
+    - GenAI + Engineer
+    - Generative AI + Engineer
+    - LLM + Engineer
+    - Machine Learning Engineer
+    - word:ML Engineer
+    - MLOps Engineer
+    - LLMOps Engineer
+    - NLP Engineer
+    - Machine Learning + Engineer
+    - ML + Engineer
+    - Machine Learning + Intern
+    - ML + Intern
+    - AI + Intern
+    - Applied Scientist
+    - Data Scientist
+    - Data Science
+    - Data Engineer
+    - Analytics Engineer
+    - Data Analyst
+    - BI Analyst
+    - BI Developer
+    - Business Intelligence Analyst
+    - Business Intelligence Developer
+    - Power BI Developer
+    - Power BI Analyst
+    - Business Analyst
+    - Product Analyst
+  negative:
+    - Co-op
+    - word:Staff
+    - Principal
+    - Director
+    - Head of
+    - word:VP
+    - Vice President
+    - Manager
+    - Sales
+    - Account Executive
+    - Recruiter
+    - Customer Care Agent
+    - .NET
+    - 'Java '
+    - iOS
+    - Android
+    - PHP
+    - Ruby
+    - Firmware
+    - FPGA
+    - ASIC
+    - Mainframe
+    - COBOL
+    - Salesforce Admin
+    - 'SAP '
+    - Oracle EBS
+
+# allow: keep if any matches · block_hard: always reject · always_allow: always keep.
+# strict: true rejects postings with no location at all.
+location_filter:
+  strict: true
+  allow:
+    - United States
+    - USA
+    - U.S.
+    - word:US
+    - Remote
+    - New York City
+    - NYC
+    - San Francisco
+    - Boston
+    - Seattle
+    - Chicago
+    - Washington, DC
+    - Los Angeles
+    - Austin
+    - Minneapolis
+    - Atlanta
+    - Denver
+  always_allow:
+    - United States
+  block_hard:
+    - Costa Rica
+    - New Zealand
+    - Serbia
+    - Hungary
+    - Greece
+    - Turkey
+    - South Africa
+    - Nigeria
+    - Egypt
+    - Pakistan
+    - Malaysia
+    - Indonesia
+    - Hong Kong
+    - Taiwan
+    - Korea
+    - Vietnam
+    - Philippines
+    - Chile
+    - Colombia
+    - Argentina
+    - Ukraine
+    - Latvia
+    - Lithuania
+    - Estonia
+    - Romania
+    - Czech
+    - Belgium
+    - Austria
+    - Switzerland
+    - Italy
+    - Denmark
+    - Norway
+    - Finland
+    - Sweden
+    - India
+    - Canada
+    - United Kingdom
+    - Germany
+    - France
+    - Spain
+    - Netherlands
+    - Ireland
+    - Poland
+    - Portugal
+    - Singapore
+    - Japan
+    - China
+    - Brazil
+    - Mexico
+    - Australia
+    - Israel
+    - UAE
+  block:
+    - Bengaluru
+    - Bangalore
+    - Hyderabad
+    - London
+    - Toronto
+    - Vancouver
+    - Berlin
+    - Paris
+    - Madrid
+    - Barcelona
+    - Amsterdam
+    - Dublin, Ireland
+    - Warsaw
+    - Lisbon
+    - Tel Aviv
+    - Sydney
+    - EMEA
+    - APAC
+    - LATAM
+    - Europe
+
+# Official career boards. Add any company that uses a supported ATS.
+# category (optional) lets a preset scan a subset, e.g. category: startup.
+tracked_companies:
+  - name: Anthropic
+    careers_url: https://job-boards.greenhouse.io/anthropic
+  - name: Intercom
+    careers_url: https://job-boards.greenhouse.io/intercom
+  - name: Hume AI
+    careers_url: https://job-boards.greenhouse.io/humeai
+  - name: ElevenLabs
+    careers_url: https://jobs.ashbyhq.com/elevenlabs
+  - name: Deepgram
+    careers_url: https://jobs.ashbyhq.com/deepgram
+  - name: Vapi
+    careers_url: https://jobs.ashbyhq.com/vapi
+  - name: Bland AI
+    careers_url: https://jobs.ashbyhq.com/bland
+  - name: Airtable
+    careers_url: https://job-boards.greenhouse.io/airtable
+  - name: Vercel
+    careers_url: https://job-boards.greenhouse.io/vercel
+  - name: Temporal
+    careers_url: https://job-boards.greenhouse.io/temporal
+  - name: Arize AI
+    careers_url: https://job-boards.greenhouse.io/arizeai
+  - name: RunPod
+    careers_url: https://job-boards.greenhouse.io/runpod
+  - name: Weights & Biases (CoreWeave)
+    careers_url: https://job-boards.greenhouse.io/coreweave
+  - name: Glean
+    careers_url: https://job-boards.greenhouse.io/gleanwork
+  - name: Ada
+    careers_url: https://job-boards.greenhouse.io/ada
+  - name: Sierra
+    careers_url: https://jobs.ashbyhq.com/sierra
+  - name: Decagon
+    careers_url: https://jobs.ashbyhq.com/decagon
+  - name: Lindy
+    careers_url: https://jobs.ashbyhq.com/lindy
+  - name: Speechmatics
+    careers_url: https://job-boards.greenhouse.io/speechmatics
+  - name: n8n
+    careers_url: https://jobs.ashbyhq.com/n8n
+  - name: Zapier
+    careers_url: https://jobs.ashbyhq.com/zapier
+  - name: Boomi
+    careers_url: https://job-boards.greenhouse.io/boomilp
+  - name: Cohere
+    careers_url: https://jobs.ashbyhq.com/cohere
+  - name: LangChain
+    careers_url: https://jobs.ashbyhq.com/langchain
+  - name: Pinecone
+    careers_url: https://jobs.ashbyhq.com/pinecone
+  - name: Mistral AI
+    careers_url: https://jobs.lever.co/mistral
+  - name: Palantir
+    careers_url: https://jobs.lever.co/palantir
+  - name: Later
+    careers_url: https://job-boards.greenhouse.io/later
+  - name: Safari AI
+    careers_url: https://job-boards.greenhouse.io/safariai
+  - name: Hootsuite
+    careers_url: https://job-boards.greenhouse.io/hootsuite
+  - name: Klue
+    careers_url: https://jobs.ashbyhq.com/klue
+  - name: Glacis AI
+    careers_url: https://jobs.ashbyhq.com/glacis-ai
+  - name: Sanctuary AI
+    careers_url: https://jobs.lever.co/sanctuary
+  - name: Attio
+    careers_url: https://jobs.ashbyhq.com/attio
+  - name: Tinybird
+    careers_url: https://jobs.ashbyhq.com/tinybird
+  - name: Clarity AI
+    careers_url: https://jobs.lever.co/clarity-ai
+  - name: Travelperk
+    careers_url: https://jobs.ashbyhq.com/perk
+  - name: Aleph Alpha
+    careers_url: https://jobs.ashbyhq.com/AlephAlpha
+  - name: DeepL
+    careers_url: https://jobs.ashbyhq.com/DeepL
+  - name: Black Forest Labs
+    careers_url: https://job-boards.greenhouse.io/blackforestlabs

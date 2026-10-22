@@ -1,0 +1,18 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Personal files. The public template never contains them. In your private
+# copy, add them once with `git add -f` (docs/DEPLOYMENT.md, step 3); the
+# scheduled workflow force-adds state/ after every run.
+config/profile.yml
+config/portals.yml
+config/cv.md
+config/blacklist.md
+state/*
+!state/.gitkeep
+
+# Runtime output
+output/
+*.log

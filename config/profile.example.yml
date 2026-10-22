@@ -1,0 +1,121 @@
+# profile.yml — who you are, what you want, and how job-radar should behave.
+#
+# Copy to config/profile.yml and edit. Every field is optional: anything you
+# leave out falls back to the default shown here. Full reference:
+# docs/CONFIGURATION.md.
+
+candidate:
+  name: "Your Name"                 # used in the alert email greeting only
+
+# ── Target roles ────────────────────────────────────────────────────────────
+# Checked top to bottom; the first match decides the title part of the fit
+# score. tier: primary (5) · secondary (4) · adjacent (3), or set score.
+# Keywords are case-insensitive phrases; wrap one in /slashes/ for a regex.
+roles:
+  - label: "AI/GenAI Eng"
+    tier: primary
+    keywords: ["ai engineer", "genai", "generative ai", "llm", "agentic", "applied ai"]
+  - label: "ML Eng"
+    tier: primary
+    keywords: ["machine learning", "ml engineer", "mlops", "nlp engineer", "deep learning"]
+  - label: "Data Scientist"
+    tier: primary
+    keywords: ["/data scien\\w*/", "/applied scien\\w*/", "research scientist"]
+  - label: "Data Eng"
+    tier: secondary
+    keywords: ["/data engineer\\w*/", "analytics engineer", "etl"]
+  - label: "Data/BI Analyst"
+    tier: secondary
+    keywords: ["data analyst", "bi analyst", "business intelligence", "product analyst"]
+  - label: "Business Analyst"
+    tier: adjacent
+    keywords: ["business analyst", "systems analyst"]
+
+# ── Skills ──────────────────────────────────────────────────────────────────
+# Matched against each job description (30% of the fit score). If you leave
+# this out, job-radar reads the "## Skills" section of config/cv.md instead.
+skills:
+  - Python
+  - SQL
+  - PyTorch
+  - Scikit-learn
+  - LLMs
+  - RAG
+  - LangChain
+  - AWS
+  - Docker
+  - Power BI
+
+# ── Locations ───────────────────────────────────────────────────────────────
+# Preferred locations score higher (remote always scores highest). Which
+# locations are allowed at all is set in portals.yml → location_filter.
+locations:
+  preferred: ["new york", "nyc", "new jersey", "boston", "massachusetts"]
+
+# ── Salary ($K per year) ────────────────────────────────────────────────────
+salary:
+  good_k: 110        # at or above → full salary points
+  fair_k: 90
+
+# ── Eligibility (hard filters) ──────────────────────────────────────────────
+# A posting that breaks one of these is BLOCKED and never reaches your alert.
+# Ambiguous wording is marked VERIFY instead, so you can check it yourself.
+eligibility:
+  needs_sponsorship: true        # block "no sponsorship now or in the future"
+  on_opt: true                   # block postings that exclude OPT / CPT
+  us_citizen: false              # true skips all citizenship and clearance rules
+  graduated: true                # block "must be currently enrolled"
+  graduation: "2026-05"          # block postings needing a later graduation date
+  max_years_required: 5          # block postings asking for more years
+  salary_floor_k: 70             # block when the stated maximum is below this
+  block_local_only: true         # block "local candidates only / no relocation"
+  excluded_title_words: [staff, principal, director, head of, vice president, vp, manager, distinguished, fellow]
+
+# ── Alerts ──────────────────────────────────────────────────────────────────
+# Credentials never go here. They come from environment variables / GitHub
+# secrets: GMAIL_USER, GMAIL_APP_PASSWORD, ALERT_TO (see docs/DEPLOYMENT.md).
+alerts:
+  email:
+    enabled: true
+    min_fit: 3.5                 # only jobs at or above this fit score
+    include_verify: true         # also send jobs whose eligibility says VERIFY
+    subject_prefix: "[job-radar]"
+
+# ── AI summary (optional) ───────────────────────────────────────────────────
+# Adds a two-line "why you fit / main gap" note per job in the alert, written
+# by Claude from the job text and this profile. Off unless ANTHROPIC_API_KEY
+# is set. One request per alert email, on the final shortlist only (≤10 jobs).
+# Cost per alert: claude-opus-5-5 ≈ $0.08 · claude-haiku-5-5 ≈ $0.002 (docs/COST.md).
+ai:
+  enabled: true
+  model: claude-opus-5-5         # or claude-haiku-5-5 / claude-sonnet-5-5
+  max_jobs: 10
+
+# ── Scan settings ───────────────────────────────────────────────────────────
+# Guardrails (time, cost, concurrency) are clamped in code: values here can
+# only make a scan smaller or cheaper. See docs/GUARDRAILS.md.
+discovery:
+  rotationBatch: 25              # public ATS boards sampled per scan
+  strongFit: 4.0
+  apify:
+    enabled: true                # LinkedIn/Indeed discovery; needs APIFY_TOKEN
+    scanCapUsd: 0.10             # hard spend cap per scan (max 0.25)
+    perRunCapUsd: 0.01
+    queries:
+      primary: ["AI Engineer", "Machine Learning Engineer", "Data Scientist"]
+      secondary: ["Data Engineer", "Data Analyst"]
+      adjacent: ["Business Analyst"]
+
+  # Presets: `npm run scan -- <name>`. A preset can only narrow a scan.
+  presets:
+    faang:
+      companies: [Meta, Google, Amazon, Apple, NVIDIA, Microsoft]
+    local:
+      locations: [New York, New Jersey, Massachusetts]
+      includeRemote: true
+
+  # Official boards for companies that are not on a public ATS list
+  # (Oracle Recruiting Cloud sites are only ever matched through this list).
+  companyBoards:
+    JPMorganChase:
+      - careers_url: "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/jobs"
