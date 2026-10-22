@@ -522,6 +522,13 @@ export async function runFreshScan(opts = {}) {
       ev.job.verifiedVia = v.via;
       if ((v.description?.length || 0) > (ev.job.description?.length || 0)) ev.job.description = v.description;
       applyEmployerFacts(ev.job, v);
+      // Board listings (e.g. Greenhouse's job list) carry no job text, so a job
+      // verified that way would show eligibility VERIFY for "no job text".
+      // Read the text from the now-known employer posting.
+      if ((ev.job.description?.length || 0) < 200 && employerAtsKind(ev.job.employerUrl)) {
+        const got = await fetchAtsPosting(ev.job.employerUrl, enrichFetch, enrichFetchText).catch(() => null);
+        if ((got?.description?.length || 0) > (ev.job.description?.length || 0)) ev.job.description = got.description;
+      }
       Object.assign(ev, evaluate(ev.job, ctx));
     }, clock.softSignal);
     mark('verify');

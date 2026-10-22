@@ -22,3 +22,5 @@ First standalone release. The scan engine is extracted from a personal career-op
 ### Fixed
 
 - One posting reached through two sources with different location text no longer appears twice in the results.
+- Jobs verified through a board listing (which carries no job text) now get their text from the employer posting, so eligibility and salary are checked instead of showing a false VERIFY.
+- A board whose provider never answers no longer lets Node 22 exit before the per-board timeout fires.

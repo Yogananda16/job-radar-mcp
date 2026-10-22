@@ -85,6 +85,20 @@ test('aggregator job confirmed at employer becomes NEW with the official apply U
   for (const { url } of log) assert.ok(ALLOWED_HOSTS.has(new URL(url).hostname), `unexpected host ${url}`);
 });
 
+test('job verified through a board listing (no text) gets its text from the employer posting', async () => {
+  const dir = tmpDir();
+  const published = new Date(NOW - 2 * HOUR).toISOString();
+  const fetchImpl = mockFetch([
+    [/boards-api\.greenhouse\.io\/v1\/boards\/globex1\/jobs$/, () => ({ jobs: [{ title: 'AI Engineer', absolute_url: 'https://job-boards.greenhouse.io/globex1/jobs/1', location: { name: 'Remote' }, first_published: published }] })],
+    [/boards-api\.greenhouse\.io\/v1\/boards\/globex1\/jobs\/1$/, () => ({ first_published: published, absolute_url: 'https://job-boards.greenhouse.io/globex1/jobs/1', content: `&lt;p&gt;${GOOD_JD}&lt;/p&gt;` })],
+    [/.*/, () => ({ __status: 404 })],
+  ]);
+  const r = await runFreshScan({ config: testConfig(dir), now: NOW, persist: false, fetchImpl, deps: deps(freshStore(dir), [politeSource('apify', [liJob(1, { description: '' })])]) });
+  assert.equal(r.top.length, 1);
+  assert.equal(r.top[0].eligibility, 'OK', 'eligibility checked on the employer text, not VERIFY for missing text');
+  assert.equal(r.top[0].salary, '$120K–$150K');
+});
+
 test('LinkedIn refresh across scans: verified NEW 30h ago, displayed "1 hour ago" today → excluded as seen', async () => {
   const dir = tmpDir();
   const file = path.join(dir, 'seen.json');

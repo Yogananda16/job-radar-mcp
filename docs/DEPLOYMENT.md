@@ -179,18 +179,47 @@ Local runs keep state in `state/` on disk, so there's nothing to commit.
 
 ## Updating from the template
 
-Your private copy doesn't update automatically. To pull in new versions:
+Your private copy doesn't update automatically. **Don't `git merge` the template.** "Use this template" creates a repository with its own single starting commit and no shared history. Merging would need `--allow-unrelated-histories`, give a conflict on every file the template has changed, and copy the template's whole commit list into your repository.
+
+Instead, copy the template's current files over yours. Your personal files are safe: `config/profile.yml`, `config/portals.yml` and `state/` don't exist in the template, so nothing below touches them.
 
 ```bash
-git remote add template https://github.com/Yogananda16/job-radar.git   # once
+# 0. Once: add the template as a read-only source
+git remote add template https://github.com/Yogananda16/job-radar.git
+
+# 1. Start from a clean, current main (the scheduled workflow commits state/)
+git switch main
+git pull --rebase
+git status                      # must say "nothing to commit"
+
+# 2. Fetch the template and see what changed (personal paths excluded)
 git fetch template
-git merge template/main --allow-unrelated-histories   # first time only needs the flag
-npm install
+git log -1 --format='%h %s' template/main
+git diff --stat HEAD template/main -- . ':(exclude)config/profile.yml' ':(exclude)config/portals.yml' ':(exclude)state'
+
+# 3. Take the template's version of every file it contains
+git checkout template/main -- .
+
+# 4. Files the template has deleted still exist in your copy; list them, then remove them
+git diff --name-only --diff-filter=A template/main HEAD -- . ':(exclude)config/profile.yml' ':(exclude)config/portals.yml' ':(exclude)state'
+# git rm <file> ...   for each file listed
+
+# 5. Check, then commit with the template commit you synced to
+npm ci
 npm test
+npm run check:secrets
+npm run scan -- --no-apify --dry-run
+git diff --cached --stat -- config state       # must be empty: personal files unchanged
+git commit -m "chore: sync with job-radar template $(git rev-parse --short template/main)"
 git push
 ```
 
-Your `config/` and `state/` files are untouched because the template never contains them.
+Notes:
+
+- Step 3 overwrites any edits you made to template files (docs, workflow, code). Step 2's diff shows them; to keep your version of a file, run `git restore --staged --worktree --source=HEAD <file>` after step 3.
+- To take only specific files, name them in step 3 instead of `.`, e.g. `git checkout template/main -- src/engine/run.mjs tests/run.test.mjs`.
+- `CHANGELOG.md` in the template lists what changed, and whether a release needs config changes.
+- Avoid updating while a scheduled run is in progress. If `git push` is rejected because a run committed state meanwhile, run `git pull --rebase` and push again.
 
 ## Pausing or stopping
 
