@@ -1,0 +1,23 @@
+{
+ "sent": {},
+ "pending": [
+  {
+   "status": "NEW",
+   "posted": "today (employer date, no time)",
+   "postedAt": 1792627200000,
+   "fit": 3.7,
+   "company": "Clearwater Analytics (CWAN)",
+   "title": "Financial Data Analyst",
+   "location": "Hybrid · Boise, ID, USA",
+   "salary": "—",
+   "eligibility": "OK",
+   "eligibilityNote": "",
+   "why": "Data/BI Analyst · 2 CV skills (SQL, Excel) · Hybrid · Boise, ID, USA",
+   "applyUrl": "https://clearwateranalytics.wd1.myworkdayjobs.com/Clearwater_Analytics_Careers/job/Office---Boise/Financial-Data-Analyst_R12478",
+   "employerConfirmed": true,
+   "liveVia": "workday clearwateranalytics/clearwater_analytics_careers (prefix)",
+   "discoveredOn": "board:builtin",
+   "verifiedVia": "workday clearwateranalytics/clearwater_analytics_careers (prefix)"
+  }
+ ]
+}
