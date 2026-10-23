@@ -36,6 +36,42 @@
    "liveVia": "greenhouse board \"lyft\"",
    "discoveredOn": "board:a16z-speedrun-talent",
    "verifiedVia": "greenhouse board \"lyft\""
+  },
+  {
+   "status": "NEW",
+   "posted": "4h 28m ago (employer)",
+   "postedAt": 1792714408000,
+   "fit": 4.2,
+   "company": "Glean",
+   "title": "AI Engineer - Quality and Post-Training",
+   "location": "San Francisco Bay Area",
+   "salary": "—",
+   "eligibility": "OK",
+   "eligibilityNote": "",
+   "why": "AI/GenAI Eng · 5 CV skills (Machine Learning, Fine-tuning, LLMs, Agentic AI) · San Francisco Bay Area · 5+ yrs asked",
+   "applyUrl": "https://job-boards.greenhouse.io/gleanwork/jobs/4746915005",
+   "employerConfirmed": true,
+   "liveVia": "greenhouse board listing",
+   "discoveredOn": "tracked",
+   "verifiedVia": ""
+  },
+  {
+   "status": "NEW",
+   "posted": "4h 29m ago (employer)",
+   "postedAt": 1792714322000,
+   "fit": 4.1,
+   "company": "Glean",
+   "title": "AI Engineer - Data and Evals",
+   "location": "San Francisco Bay Area",
+   "salary": "—",
+   "eligibility": "OK",
+   "eligibilityNote": "",
+   "why": "AI/GenAI Eng · 2 CV skills (Agentic AI, APIs) · San Francisco Bay Area",
+   "applyUrl": "https://job-boards.greenhouse.io/gleanwork/jobs/4746908005",
+   "employerConfirmed": true,
+   "liveVia": "greenhouse board listing",
+   "discoveredOn": "tracked",
+   "verifiedVia": ""
   }
  ]
 }
