@@ -126,6 +126,42 @@
    "liveVia": "greenhouse board \"andurilindustries\"",
    "discoveredOn": "board:a16z-speedrun-talent",
    "verifiedVia": "greenhouse board \"andurilindustries\""
+  },
+  {
+   "status": "NEW",
+   "posted": "8h 22m ago (employer)",
+   "postedAt": 1792766630000,
+   "fit": 4.2,
+   "company": "Thatch",
+   "title": "Data Scientist: Product",
+   "location": "Austin, Texas, United States; New York, New York, United States; Remote (US); San Francisco, California, United States, Remote",
+   "salary": "—",
+   "eligibility": "VERIFY",
+   "eligibilityNote": "no job text available to check eligibility",
+   "why": "Data Scientist · skills unchecked · Remote",
+   "applyUrl": "https://thatch.com/jobs/5461158008?gh_jid=5461158008",
+   "employerConfirmed": true,
+   "liveVia": "greenhouse board \"thatch\"",
+   "discoveredOn": "board:a16z-speedrun-talent",
+   "verifiedVia": "greenhouse board \"thatch\""
+  },
+  {
+   "status": "NEW",
+   "posted": "1h 59m ago (employer)",
+   "postedAt": 1792789624000,
+   "fit": 3.6,
+   "company": "SoFi",
+   "title": "Senior Data Engineer",
+   "location": "Hybrid · Cottonwood Heights, UT, USA",
+   "salary": "$125K–$156K",
+   "eligibility": "OK",
+   "eligibilityNote": "",
+   "why": "Data Eng · 3 CV skills (Data Pipelines, Data Engineering, Data Quality) · Hybrid · Cottonwood Heights, UT, USA · $125K–$156K",
+   "applyUrl": "https://sofi.com/careers/job/8040823003?gh_jid=8040823003",
+   "employerConfirmed": true,
+   "liveVia": "greenhouse board \"sofi\"",
+   "discoveredOn": "board:builtin",
+   "verifiedVia": "greenhouse board \"sofi\""
   }
  ]
 }
