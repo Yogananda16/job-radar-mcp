@@ -90,6 +90,42 @@
    "liveVia": "ashby board \"ibotta\"",
    "discoveredOn": "board:builtin",
    "verifiedVia": "ashby board \"ibotta\""
+  },
+  {
+   "status": "NEW",
+   "posted": "1h 37m ago (employer)",
+   "postedAt": 1792776729000,
+   "fit": 4.3,
+   "company": "JPMorganChase",
+   "title": "Software Engineer III- Data Engineer(Python, Databricks and AWS)",
+   "location": "Hybrid · Plano, TX, USA",
+   "salary": "—",
+   "eligibility": "OK",
+   "eligibilityNote": "",
+   "why": "Data Eng · 10 CV skills (Python, SQL, Machine Learning, AWS) · Hybrid · Plano, TX, USA · 3+ yrs asked",
+   "applyUrl": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/210796059",
+   "employerConfirmed": true,
+   "liveVia": "oracle jpmc.fa.oraclecloud.com/CX_2001 (configured)",
+   "discoveredOn": "board:builtin",
+   "verifiedVia": "oracle jpmc.fa.oraclecloud.com/CX_2001 (configured)"
+  },
+  {
+   "status": "NEW",
+   "posted": "3h 35m ago (employer)",
+   "postedAt": 1792769666000,
+   "fit": 4.3,
+   "company": "Anduril Industries",
+   "title": "Systems Engineer - Machine Learning",
+   "location": "Colorado Springs, Colorado, United States; Huntsville, Alabama, United States",
+   "salary": "—",
+   "eligibility": "VERIFY",
+   "eligibilityNote": "g plus. Security Clearance: Active U.S. Secret clearance required PREFERRED QUALIFICATIONS Top Secret / S",
+   "why": "ML Eng · 6 CV skills (Python, C++, Machine Learning, PyTorch) · Colorado Springs, Colorado, United States; Huntsville, Alabama, United States · 5+ yrs asked",
+   "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5272037007?gh_jid=5272037007",
+   "employerConfirmed": true,
+   "liveVia": "greenhouse board \"andurilindustries\"",
+   "discoveredOn": "board:a16z-speedrun-talent",
+   "verifiedVia": "greenhouse board \"andurilindustries\""
   }
  ]
 }
