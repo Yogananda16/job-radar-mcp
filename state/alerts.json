@@ -72,6 +72,24 @@
    "liveVia": "greenhouse board listing",
    "discoveredOn": "tracked",
    "verifiedVia": ""
+  },
+  {
+   "status": "NEW",
+   "posted": "2h 29m ago (employer)",
+   "postedAt": 1792769293238,
+   "fit": 4.1,
+   "company": "Ibotta",
+   "title": "Data Engineer",
+   "location": "Hybrid · Denver, CO, USA",
+   "salary": "$110K–$126K",
+   "eligibility": "OK",
+   "eligibilityNote": "",
+   "why": "Data Eng · 5 CV skills (Python, SQL, AWS, GCP) · Hybrid · Denver, CO, USA · $110K–$126K · 3+ yrs asked",
+   "applyUrl": "https://jobs.ashbyhq.com/ibotta/41d60bfd-7dff-4ad5-afad-a354e8bbcd58",
+   "employerConfirmed": true,
+   "liveVia": "ashby board \"ibotta\"",
+   "discoveredOn": "board:builtin",
+   "verifiedVia": "ashby board \"ibotta\""
   }
  ]
 }
