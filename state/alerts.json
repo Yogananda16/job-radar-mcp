@@ -162,6 +162,24 @@
    "liveVia": "greenhouse board \"sofi\"",
    "discoveredOn": "board:builtin",
    "verifiedVia": "greenhouse board \"sofi\""
+  },
+  {
+   "status": "NEW",
+   "posted": "2h 41m ago (employer)",
+   "postedAt": 1792796058019,
+   "fit": 3.9,
+   "company": "Luxury Presence",
+   "title": "Senior Data Analyst, GTM Analytics - Austin TX (Hybrid)",
+   "location": "Hybrid · Austin, TX, USA",
+   "salary": "$145K–$175K",
+   "eligibility": "OK",
+   "eligibilityNote": "",
+   "why": "Data/BI Analyst · 4 CV skills (Python, SQL, Agentic AI, Data Quality) · Hybrid · Austin, TX, USA · $145K–$175K",
+   "applyUrl": "https://jobs.lever.co/luxurypresence/63af377e-7bd7-4a24-8911-6e1031f7c08d",
+   "employerConfirmed": true,
+   "liveVia": "lever board \"luxurypresence\"",
+   "discoveredOn": "board:builtin",
+   "verifiedVia": "lever board \"luxurypresence\""
   }
  ]
 }
