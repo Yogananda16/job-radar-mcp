@@ -180,6 +180,42 @@
    "liveVia": "lever board \"luxurypresence\"",
    "discoveredOn": "board:builtin",
    "verifiedVia": "lever board \"luxurypresence\""
+  },
+  {
+   "status": "NEW",
+   "posted": "6h 23m ago (employer)",
+   "postedAt": 1792803124987,
+   "fit": 4.2,
+   "company": "Deepgram",
+   "title": "Marketing & GTM Data Analyst",
+   "location": "Remote · USA",
+   "salary": "$115K–$148K",
+   "eligibility": "OK",
+   "eligibilityNote": "",
+   "why": "Data/BI Analyst · 5 CV skills (Python, SQL, Data Engineering, Data Quality) · Remote · $115K–$148K",
+   "applyUrl": "https://jobs.ashbyhq.com/deepgram/f428c615-65e8-4d4d-84dd-ba0da64f1a9b",
+   "employerConfirmed": true,
+   "liveVia": "ashby board \"deepgram\"",
+   "discoveredOn": "board:builtin",
+   "verifiedVia": "ashby board \"deepgram\""
+  },
+  {
+   "status": "NEW",
+   "posted": "8h 7m ago (employer)",
+   "postedAt": 1792796859000,
+   "fit": 4,
+   "company": "KoBold Metals",
+   "title": "Senior Applied Scientist (Onsite/Hybrid)",
+   "location": "San Francisco Bay Area",
+   "salary": "$130K–$190K",
+   "eligibility": "OK",
+   "eligibilityNote": "",
+   "why": "Data Scientist · 2 CV skills (Machine Learning, Data Analysis) · San Francisco Bay Area · $130K–$190K",
+   "applyUrl": "https://job-boards.greenhouse.io/koboldmetals/jobs/4746845005",
+   "employerConfirmed": true,
+   "liveVia": "greenhouse board \"koboldmetals\"",
+   "discoveredOn": "board:a16z-speedrun-talent",
+   "verifiedVia": "greenhouse board \"koboldmetals\""
   }
  ]
 }
