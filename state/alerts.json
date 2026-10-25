@@ -216,6 +216,24 @@
    "liveVia": "greenhouse board \"koboldmetals\"",
    "discoveredOn": "board:a16z-speedrun-talent",
    "verifiedVia": "greenhouse board \"koboldmetals\""
+  },
+  {
+   "status": "NEW",
+   "posted": "1h 32m ago (employer)",
+   "postedAt": 1792884775000,
+   "fit": 4.7,
+   "company": "Anduril Industries",
+   "title": "Senior Software Engineer- Machine Learning",
+   "location": "Broomfield, Colorado, United States",
+   "salary": "$190K",
+   "eligibility": "VERIFY",
+   "eligibilityNote": "maintain an active U.S. Secret security clearance Preferred Qualifications TypeScript or",
+   "why": "ML Eng · 6 CV skills (Python, C++, Machine Learning, PyTorch) · Broomfield, Colorado, United States · $190K · 2+ yrs asked",
+   "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5274648007?gh_jid=5274648007",
+   "employerConfirmed": true,
+   "liveVia": "greenhouse board \"andurilindustries\"",
+   "discoveredOn": "board:a16z-speedrun-talent",
+   "verifiedVia": "greenhouse board \"andurilindustries\""
   }
  ]
 }
