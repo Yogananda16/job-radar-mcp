@@ -252,6 +252,24 @@
    "liveVia": "greenhouse board listing",
    "discoveredOn": "tracked",
    "verifiedVia": ""
+  },
+  {
+   "status": "NEW",
+   "posted": "3h 55m ago (employer)",
+   "postedAt": 1793130543000,
+   "fit": 3.8,
+   "company": "JPMorganChase",
+   "title": "Software Engineer III - Tableau BI Developer",
+   "location": "Hybrid · Chicago, IL, USA",
+   "salary": "—",
+   "eligibility": "OK",
+   "eligibilityNote": "",
+   "why": "Data/BI Analyst · 5 CV skills (Python, CI/CD, ETL, Data Visualization) · Hybrid · Chicago, IL, USA · 5+ yrs asked",
+   "applyUrl": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/210801600",
+   "employerConfirmed": true,
+   "liveVia": "oracle jpmc.fa.oraclecloud.com/CX_2001 (configured)",
+   "discoveredOn": "board:builtin",
+   "verifiedVia": "oracle jpmc.fa.oraclecloud.com/CX_2001 (configured)"
   }
  ]
 }
