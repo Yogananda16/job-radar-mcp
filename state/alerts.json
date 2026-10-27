@@ -234,6 +234,24 @@
    "liveVia": "greenhouse board \"andurilindustries\"",
    "discoveredOn": "board:a16z-speedrun-talent",
    "verifiedVia": "greenhouse board \"andurilindustries\""
+  },
+  {
+   "status": "NEW",
+   "posted": "1h 36m ago (employer)",
+   "postedAt": 1793054863000,
+   "fit": 3.8,
+   "company": "Anthropic",
+   "title": "Security Data Engineer",
+   "location": "Remote-Friendly (Travel Required) | San Francisco, CA",
+   "salary": "—",
+   "eligibility": "OK",
+   "eligibilityNote": "",
+   "why": "Data Eng · 2 CV skills (Data Quality, APIs) · Remote",
+   "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5462966008",
+   "employerConfirmed": true,
+   "liveVia": "greenhouse board listing",
+   "discoveredOn": "tracked",
+   "verifiedVia": ""
   }
  ]
 }
