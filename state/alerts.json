@@ -342,6 +342,24 @@
    "liveVia": "ashby board listing",
    "discoveredOn": "ats-rotation",
    "verifiedVia": ""
+  },
+  {
+   "status": "NEW",
+   "posted": "5h 26m ago (employer)",
+   "postedAt": 1793209404000,
+   "fit": 4.2,
+   "company": "Anduril Industries",
+   "title": "Data Analyst, Quality",
+   "location": "Atlanta, Georgia, United States",
+   "salary": "$127K",
+   "eligibility": "VERIFY",
+   "eligibilityNote": "and maintain a U.S. Government security clearance. WHAT YOU’LL DO Intersection of Analyti",
+   "why": "Data/BI Analyst · 7 CV skills (Python, SQL, LLMs, RAG) · Atlanta, Georgia, United States · $127K",
+   "applyUrl": "https://boards.greenhouse.io/andurilindustries/jobs/5278364007?gh_jid=5278364007",
+   "employerConfirmed": true,
+   "liveVia": "greenhouse board \"andurilindustries\"",
+   "discoveredOn": "board:a16z-speedrun-talent",
+   "verifiedVia": "greenhouse board \"andurilindustries\""
   }
  ]
 }
