@@ -360,6 +360,42 @@
    "liveVia": "greenhouse board \"andurilindustries\"",
    "discoveredOn": "board:a16z-speedrun-talent",
    "verifiedVia": "greenhouse board \"andurilindustries\""
+  },
+  {
+   "status": "NEW",
+   "posted": "6h 29m ago (employer)",
+   "postedAt": 1793212967956,
+   "fit": 4,
+   "company": "Notion",
+   "title": "Data Engineer, Product",
+   "location": "Hybrid · San Francisco, CA, USA",
+   "salary": "$179K–$200K",
+   "eligibility": "OK",
+   "eligibilityNote": "",
+   "why": "Data Eng · 6 CV skills (Python, SQL, AWS, GCP) · Hybrid · San Francisco, CA, USA · $179K–$200K · 5+ yrs asked",
+   "applyUrl": "https://jobs.ashbyhq.com/notion/73a71747-28d3-4dda-a718-77336056e687",
+   "employerConfirmed": true,
+   "liveVia": "ashby board \"notion\"",
+   "discoveredOn": "board:builtin",
+   "verifiedVia": "ashby board \"notion\""
+  },
+  {
+   "status": "NEW",
+   "posted": "5h 8m ago (employer)",
+   "postedAt": 1793217829000,
+   "fit": 3.7,
+   "company": "Liftoff",
+   "title": "Lead Data Analyst",
+   "location": "Remote · United States",
+   "salary": "$142K–$195K",
+   "eligibility": "OK",
+   "eligibilityNote": "",
+   "why": "Data/BI Analyst · 2 CV skills (SQL, Data Analysis) · Remote · $142K–$195K",
+   "applyUrl": "https://liftoff.io/job/8330805?gh_jid=8330805",
+   "employerConfirmed": true,
+   "liveVia": "greenhouse board \"liftoff\"",
+   "discoveredOn": "board:builtin",
+   "verifiedVia": "greenhouse board \"liftoff\""
   }
  ]
 }
